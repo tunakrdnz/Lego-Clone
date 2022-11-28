@@ -1,5 +1,13 @@
-h1 {
-  color: black;
+.utilityBar {
+  display: flex;
+  width: 100vw;
+  height: 55px;
+}
+
+.utilityBar p {
+  color: grey;
+  display: flex;
+  height: 50px;
 }
 
 /*# sourceMappingURL=index.css.map */
