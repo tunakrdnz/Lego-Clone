@@ -1,6 +1,6 @@
 # Lego-Clone
 
-assets/styles - add SCSS files here 
+assets/styles - add SCSS files here
 
 ## Installation
 
@@ -18,5 +18,3 @@ Pre-commit hooks:
 
 - the commit messages need to follow the conventional commits structure (https://www.conventionalcommits.org/en/v1.0.0/)
 - the files will need to be pretty before a commit. please run `yarn lint` before you commit otherwise you won't be able to commit
-
-
