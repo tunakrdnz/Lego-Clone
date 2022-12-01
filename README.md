@@ -10,7 +10,7 @@ assets/styles - add SCSS files here
 
 If you run `yarn --version` and it works it means that yarn was installed
 
-2.Install dependencies
+2.Install dependencies:
 
 `yarn`
 
