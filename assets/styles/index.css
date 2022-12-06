@@ -1,13 +1,20 @@
 .utilityBar {
   display: flex;
+  border: 5px solid brown;
   width: 100vw;
-  height: 55px;
+  height: 100px;
+  justify-items: center;
 }
 
-.utilityBar p {
-  color: grey;
+.layoutSection {
   display: flex;
-  height: 50px;
+  width: 75vw;
+  flex-direction: row;
+  border: 5px solid pink;
+}
+
+svg {
+  max-width: 50px;
 }
 
 /*# sourceMappingURL=index.css.map */
