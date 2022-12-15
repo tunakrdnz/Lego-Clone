@@ -1,9 +1,9 @@
 .utilityBar {
   display: flex;
   border: 5px solid brown;
-  width: 100vw;
   height: 100px;
-  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .layoutSection {
