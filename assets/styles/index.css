@@ -17,4 +17,12 @@ svg {
   max-width: 50px;
 }
 
+.recommended-part-container {
+  display: flex;
+}
+
+.carousel-wrapper {
+  display: flex;
+}
+
 /*# sourceMappingURL=index.css.map */
