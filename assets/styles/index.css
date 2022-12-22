@@ -37,6 +37,14 @@
   max-width: 50px;
 }
 
+
+.recommended-part-container {
+  display: flex;
+}
+
+.carousel-wrapper {
+  display: flex;
+
 @font-face {
   font-family: "CeraPro";
   src: url("../fonts/CeraPro-Regular.woff2") format("woff2"),
@@ -46,6 +54,7 @@
 }
 :root {
   font-family: "CeraPro";
+
 }
 
 /*# sourceMappingURL=index.css.map */
