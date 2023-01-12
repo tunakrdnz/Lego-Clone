@@ -5,7 +5,6 @@
   height: 55px;
   padding: 0px 30px;
   align-items: center;
-  justify-content: space-around;
   background-color: #f8f8f8;
   font-size: 16px;
 }
@@ -18,6 +17,7 @@
   font-size: 0.75rem;
   box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
   padding: 0px 0.625rem;
+  margin-right: 30vw;
   border-radius: 3px;
   -webkit-box-align: center;
   border: none;
@@ -35,6 +35,7 @@
 .arrowIcon {
   transform: rotate(180deg);
   width: 18px;
+  margin-right: 0.625rem;
 }
 
 .leftArrow {
@@ -106,9 +107,34 @@
 }
 
 .legoLogo {
-  max-width: 50px;
+  width: auto;
+  height: 55px;
 }
 
+.logo-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainBarMenu li:first-child {
+  padding-left: 30px;
+}
+.mainBarMenu li {
+  padding-right: 3.125rem;
+}
+.mainBarMenu li:last-child {
+  padding-right: 0;
+}
+
+.header-slider {
+  margin-right: 30vw;
+  display: flex;
+}
+
+.slider-text.header {
+  padding-left: 6vw;
+  padding-right: 6vw;
+}
 
 .recommended-part-container {
   display: flex;
@@ -116,6 +142,7 @@
 
 .carousel-wrapper {
   display: flex;
+}
 
 @font-face {
   font-family: "CeraPro";
@@ -126,7 +153,6 @@
 }
 :root {
   font-family: "CeraPro";
-
 }
 
 /*# sourceMappingURL=index.css.map */
