@@ -10,6 +10,28 @@
   font-size: 16px;
 }
 
+.playZone {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.57rem;
+  background-color: rgb(171, 217, 255);
+  font-size: 0.75rem;
+  box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
+  padding: 0px 0.625rem;
+  border-radius: 3px;
+  -webkit-box-align: center;
+  border: none;
+}
+.playZone:hover {
+  background-color: white;
+}
+
+.playZone a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
 .arrowIcon {
   transform: rotate(180deg);
   width: 18px;
@@ -24,13 +46,63 @@
   height: 18px;
 }
 
+.mainBarMenu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 250px;
+  line-height: 1.5;
+}
+
+.buttonHeader {
+  border: 0;
+  background: none;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.75rem;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainBarSection {
+  display: inline-flex;
+  width: 100vw;
+  height: 75px;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(255, 207, 0);
+  font-size: 16px;
+}
+
 .layoutSection {
   display: flex;
   width: 98vw;
+  align-items: center;
+  justify-content: space-evenly;
   flex-direction: row;
-  border: 5px solid pink;
   padding-left: 150px;
   padding-right: 150px;
+}
+
+.layoutSection img {
+  width: 79.41px;
+}
+
+.layoutSection li {
+  list-style: none;
+}
+
+.layoutSection a {
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: black;
 }
 
 .legoLogo {
