@@ -1,59 +1,3 @@
-.utilityBar {
-  display: flex;
-  /*border: 5px solid brown;*/
-  width: 100vw;
-  height: 55px;
-  padding: 0px 30px;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #f8f8f8;
-  font-size: 16px;
-}
-
-.arrowIcon {
-  transform: rotate(180deg);
-  width: 18px;
-}
-
-.leftArrow {
-  transform: rotate(180deg);
-  height: 18px;
-}
-
-.rightArrow {
-  height: 18px;
-}
-
-.layoutSection {
-  display: flex;
-  width: 98vw;
-  flex-direction: row;
-  border: 5px solid pink;
-  padding-left: 150px;
-  padding-right: 150px;
-}
-
-.legoLogo {
-  max-width: 50px;
-}
-
-.recommended-part-container {
-  display: flex;
-}
-
-.carousel-wrapper {
-  display: flex;
-}
-
-@font-face {
-  font-family: "CeraPro";
-  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Bold.woff2") format("woff2"), url("../fonts/CeraPro-Medium.woff2") format("woff2");
-  font-size: 40px;
-}
-:root {
-  font-family: "CeraPro";
-}
-
 .footerContainer {
   display: flex;
   width: 100vw;
@@ -170,7 +114,7 @@
 .footerInfo_title {
   padding-top: 10px;
   padding-bottom: 20px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -180,12 +124,22 @@
 }
 
 .footerInfo_details {
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .footerInfo_details:hover {
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=index.css.map */
+.footerSocialMedia {
+  width: auto;
+  height: 200px;
+}
+
+.social-facebook {
+  height: 100px;
+  width: 100px;
+}
+
+/*# sourceMappingURL=footer.css.map */
