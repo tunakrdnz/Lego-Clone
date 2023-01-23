@@ -1,6 +1,7 @@
 .recommended-part-container {
   display: flex;
 }
-.carousel-wrapper {
+.carousel-scrollArea-wrapper {
   display: flex;
+  flex-direction: row;
 }
