@@ -1,5 +1,3 @@
-//Note for Tuna
-//This is the new code
 .header-desktop {
   z-index: 3;
   position: relative;
@@ -381,121 +379,146 @@
 }
 
 .layout-section {
-  width: 98vw;
-  max-width: 100rem;
-  margin: 0px auto;
-  background-color: white;
-  display: block;
-  // @media (min-width: 1201px) {
-  //   max-width: 100rem;
-  //   margin: 0px auto;
-  // }
+  // border: red solid 1px;
+  height: 203px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &-container {
+    align-items: center;
+    // border: red solid 1px;
+    margin: 0px 20.5px;
+    padding: 40px 20px;
     max-width: 82.5rem;
-    margin: 0px auto;
-    padding: 2.5rem 1.25rem;
-    display: flex;
-    line-height: 1.125rem;
-    justify-content: center;
-    flex-wrap: nowrap;
-    padding: 0;
-    margin: 0;
-    list-style: none;
     &-ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      line-height: 1.125rem;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
       &-li {
         display: flex;
         flex-direction: column;
         text-align: center;
+        list-style-type: none;
         max-width: 6.25rem;
         margin-right: 1.875rem;
         margin-bottom: 0.625rem;
-        list-style: none;
         &-anchor {
           text-decoration: none;
-          max-width: 6.25rem;
           color: black;
+          max-width: 6.25rem;
           cursor: pointer;
           background-color: transparent;
+          text-align: center;
+          font-size: 0.75rem;
+          &:hover {
+            text-decoration: underline;
+            color: #006db7;
+          }
+          & img {
+            width: 80px;
+            height: 65px;
+          }
         }
       }
     }
   }
-  &-image-style-container {
-    margin: 0px auto 0.75rem;
-    vertical-align: middle;
-    transition: opacity 0.3s ease-in 0s;
-    opacity: 1;
-    position: static;
-    max-width: 100%;
-    width: auto;
-    // border: solid 5px red;
-  }
-  &-image-description {
-    line-height: 0.9375rem;
-    font-size: 0.75rem;
-    font-weight: 400;
-  }
 }
-//Note for Tuna
-//This is the end of new code
 
-// .mainBarMenu {
+// .layout-section-container-ul {
+//   flex-direction: row;
+//   list-style-type: none;
 //   display: flex;
-//   align-items: center;
-//   list-style: none;
-//   width: 250px;
-//   line-height: 1.5;
-//   padding: 0px 30px;
+//   border: solid red 5px;
+//   width: 98vw;
+//   margin: 0px auto;
+//   &-li-anchor {
+//     text-decoration: none;
+//   }& img {
+//     width: 80px;
+//     height: 65px;
+//   }
 // }
-// .buttonHeader {
-//   border: 0;
-//   background: none;
-//   flex-direction: column;
-//   text-align: center;
-//   text-decoration: none;
-//   display: inline-block;
-//   font-size: 0.75rem;
-//   cursor: pointer;
-//   width: 2.5rem;
-//   height: 2.5rem;
-//   border-radius: 50%;
-//   align-items: center;
-//   justify-content: center;
-// }
-// .mainBarSection {
-//   display: inline-flex;
-//   width: 100vw;
-//   height: 75px;
-//   padding: 0px 30px;
-//   align-items: center;
-//   justify-content: space-around;
-//   background-color: rgb(255, 207, 0);
-//   font-size: 16px;
-//   font-weight: bold;
-// }
-// // .utilityBar p {
-// //   color: grey;
-// //   display: flex;
-// //   height: 50px;
-// // }
-// .layoutSection {
+
+// .layout-section {
+//   width: 98vw;
+//   max-width: 100rem;
+//   margin: 0px auto;
+//   background-color: white;
 //   display: flex;
+//   flex-direction: row;
+//   border: red solid 5px;
+//   &-container {
+//     padding-left: 180px;
+//     flex-direction: column-reverse;
+//     border: red solid 5px;
+//     max-width: 82.5rem;
+//     margin: 0px auto;
+//     padding: 2.5rem 1.25rem;
+//     display: flex;
+//     line-height: 1.125rem;
+//     justify-content: center;
+//     flex-wrap: nowrap;
+//     padding: 0;
+//     margin: 0;
+//     list-style: none;
+//     &-ul {
+//       &-li {
+//         display: flex;
+//         flex-direction: column;
+//         text-align: center;
+//         max-width: 6.25rem;
+//         margin-right: 1.875rem;
+//         margin-bottom: 0.625rem;
+//         list-style: none;
+//         &-anchor {
+//           text-decoration: none;
+//           max-width: 6.25rem;
+//           color: black;
+//           cursor: pointer;
+//           background-color: transparent;
+//         }
+//       }
+//     }
+//   }
+//   &-image-style-container {
+//     margin: 0px auto 0.75rem;
+//     vertical-align: middle;
+//     transition: opacity 0.3s ease-in 0s;
+//     opacity: 1;
+//     position: static;
+//     max-width: 100%;
+//     width: auto;
+//     // border: solid 5px red;
+//   }
+//   &-image-description {
+//     line-height: 0.9375rem;
+//     font-size: 0.75rem;
+//     font-weight: 400;
+//   }
+// }
+
+// .layout-section {
+//   display: flex;
+//   flex-direction: row;
 //   width: 98vw;
 //   align-items: center;
 //   justify-content: space-evenly;
 //   flex-direction: row;
-
 //   padding-left: 150px;
 //   padding-right: 150px;
 // }
-// .layoutSection img {
+// .layout-section img {
 //   width: 79.41px;
 // }
-
-// .layoutSection li {
+// .layoutsection li {
 //   list-style: none;
 // }
-// .layoutSection a {
+// .layout-section a {
 //   text-decoration: none;
 //   font-size: 0.75rem;
 //   color: black;
@@ -534,54 +557,4 @@
 //   &:hover {
 //     text-decoration: underline;
 //   }
-// }
-
-// .header-button-container {
-//   display: flex;
-//   flex: 0 1 33.33%;
-//   align-items: center;
-//   justify-content: flex-end;
-//   font-size: 0.75rem;
-// }
-// .main-bar-navigation {
-//   display: flex;
-//   align-items: center;
-//   height: 100%;
-//   box-sizing: inherit;
-// }
-
-// .utilityBar {
-//   display: flex;
-//   /*border: 5px solid brown;*/
-//   width: 100vw;
-//   height: 55px;
-//   padding: 0px 30px;
-//   align-items: center;
-//   // justify-content: space-around;
-//   background-color: #f8f8f8;
-//   font-size: 16px;
-//   padding: 0px 30px;
-// }
-// .playZone {
-//   display: inline-flex;
-//   align-items: center;
-//   line-height: 1.57rem;
-//   width: 15%;
-//   background-color: rgb(171, 217, 255);
-//   font-size: 0.75rem;
-//
-//   padding: 0px 0.625rem;
-//   margin-right: 30vw;
-//   border-radius: 3px;
-//   -webkit-box-align: center;
-//   border: none;
-//   &:hover {
-//     background-color: white;
-//   }
-// }
-// .playZone a {
-//   text-decoration: none;
-//   color: black;
-//   font-weight: 700;
-//   text-transform: uppercase;
 // }
