@@ -190,7 +190,7 @@
   height: 4.6875rem;
   margin: 0px auto;
   width: 100%;
-  max-width: 100rem;
+  max-width: 100%;
   display: flex;
   align-items: center;
 }
@@ -348,10 +348,96 @@
   cursor: pointer;
 }
 
-.legoLogo {
+.main-image-section {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin-bottom: 1.875rem;
+  margin: 0px auto;
+  background-color: white;
+}
+.main-image-section-anchor {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #006db7;
+  text-decoration: none;
+  background-color: transparent;
+}
+.main-image-section-image-container {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  transition: opacity 0.3s ease-in 0s;
+  opacity: 1;
+  inset: 0px;
+  cursor: pointer;
+}
+.main-image-section-picture {
+  inset: 0px;
+  cursor: pointer;
+}
+.main-image-section-picture-image {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  inset: 0px;
+  border-style: none;
+}
+
+.layout-section {
+  width: 98vw;
+  max-width: 100rem;
+  margin: 0px auto;
+  background-color: white;
+  display: block;
+}
+.layout-section-container {
+  max-width: 82.5rem;
+  margin: 0px auto;
+  padding: 2.5rem 1.25rem;
+  display: flex;
+  line-height: 1.125rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.layout-section-container-ul-li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 6.25rem;
+  margin-right: 1.875rem;
+  margin-bottom: 0.625rem;
+  list-style: none;
+}
+.layout-section-container-ul-li-anchor {
+  text-decoration: none;
+  max-width: 6.25rem;
+  color: black;
+  cursor: pointer;
+  background-color: transparent;
+}
+.layout-section-image-style-container {
+  margin: 0px auto 0.75rem;
+  vertical-align: middle;
+  transition: opacity 0.3s ease-in 0s;
+  opacity: 1;
+  position: static;
+  max-width: 100%;
   width: auto;
-  height: 55px;
-  margin-left: -340px;
+}
+.layout-section-image-description {
+  line-height: 0.9375rem;
+  font-size: 0.75rem;
+  font-weight: 400;
 }
 
 .recommended-part-container {

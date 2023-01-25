@@ -228,75 +228,138 @@
         </section>
       </div>
 
-      <section class="imageSection">
-        <img src="assets/images/imageSection_Large.jpg" alt="" srcset="" />
+      <section class="main-image-section">
+        <a href="#" class="main-image-section-anchor">
+          <div class="main-image-section-image-container">
+            <picture class="main-image-section-picture">
+              <source
+                type="image/jpeg"
+                media="(min-width: 901px)"
+                srcset="assets/images/header_images/imageSection_Large.jpg 1.5x"
+              />
+              <source
+                type="image/jpeg"
+                media="(min-width: 601px)"
+                srcset="
+                  assets/images/header_images/imageSection_Medium.jpg 1.5x
+                "
+              />
+              <source
+                type="image/jpeg"
+                media="(max-width: 600px)"
+                srcset="assets/images/header_images/imageSection_Small.jpg 2x"
+              />
+              <img
+                src="assets/images/header_images/imageSection_Large.jpg"
+                alt=""
+                class="main-image-section-picture-image"
+              />
+            </picture>
+          </div>
+        </a>
       </section>
 
-      <section class="layoutSection">
-        <li>
-          <a href="#">
-            <picture>
-              <img src="assets/images/layout_New.jpg" alt="" />
-            </picture>
-            <div>New</div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <picture>
-              <img src="assets/images/layout_Exclusives.png" alt="" />
-            </picture>
-            <div>Exclusives</div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <picture>
-              <img src="assets/images/layout_Offers.png" alt="" />
-            </picture>
-            <div>Offers</div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <picture>
-              <img src="assets/images/layout_LastChance.png" alt="" />
-            </picture>
-            <div>Last Chance</div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <picture>
-              <img src="assets/images/layout_Holiday.png" alt="" />
-            </picture>
-            <div>Holiday 2022</div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <picture>
-              <img src="assets/images/layout_GiftCards.png" alt="" />
-            </picture>
-            <div>Gift Finder</div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <picture>
-              <img src="assets/images/layout_Sale.png" alt="" />
-            </picture>
-            <div>Best Sellers</div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <picture>
-              <img src="assets/images/layout_VIP.jpg" alt="" />
-            </picture>
-            <div>VIP</div>
-          </a>
-        </li>
+      <section class="layout-section">
+        <div class="layout-section-container">
+          <ul class="layout-section-container-ul">
+            <li class="layout-section-container-ul-li">
+              <a href="#" class="layout-section-container-ul-li-anchor">
+                <picture class="layout-section-image-style-container">
+                  <img
+                    src="assets/images/header_images/layout_New.jpg"
+                    alt=""
+                  />
+                </picture>
+                <span class="layout-section-image-description">New</span>
+              </a>
+            </li>
+            <li class="layout-section-container-ul-li">
+              <a href="#" class="layout-section-container-ul-li-anchor">
+                <picture class="layout-section-image-style-container">
+                  <img
+                    src="assets/images/header_images/layout_Exclusives.png"
+                    alt=""
+                  />
+                </picture>
+                <span class="layout-section-image-description">Exclusives</span>
+              </a>
+            </li>
+            <li class="layout-section-container-ul-li">
+              <a href="#" class="layout-section-container-ul-li-anchor">
+                <picture class="layout-section-image-style-container">
+                  <img
+                    src="assets/images/header_images/layout_Offers.png"
+                    alt=""
+                  />
+                </picture>
+                <span class="layout-section-image-description">Offers</span>
+              </a>
+            </li>
+            <li class="layout-section-container-ul-li">
+              <a href="#" class="layout-section-container-ul-li-anchor">
+                <picture class="layout-section-image-style-container">
+                  <img
+                    src="assets/images/header_images/layout_LastChance.png"
+                    alt=""
+                  />
+                </picture>
+                <span class="layout-section-image-description"
+                  >Last Chance</span
+                >
+              </a>
+            </li>
+            <li class="layout-section-container-ul-li">
+              <a href="#" class="layout-section-container-ul-li-anchor">
+                <picture class="layout-section-image-style-container">
+                  <img
+                    src="assets/images/header_images/layout_Holiday.png"
+                    alt=""
+                  />
+                </picture>
+                <span class="layout-section-image-description"
+                  >Holiday 2022</span
+                >
+              </a>
+            </li>
+            <li class="layout-section-container-ul-li">
+              <a href="#" class="layout-section-container-ul-li-anchor">
+                <picture class="layout-section-image-style-container">
+                  <img
+                    src="assets/images/header_images/layout_GiftCards.png"
+                    alt=""
+                  />
+                </picture>
+                <span class="layout-section-image-description"
+                  >Gift Finder</span
+                >
+              </a>
+            </li>
+            <li class="layout-section-container-ul-li">
+              <a href="#" class="layout-section-container-ul-li-anchor">
+                <picture class="layout-section-image-style-container">
+                  <img
+                    src="assets/images/header_images/layout_Sale.png"
+                    alt=""
+                  />
+                </picture>
+                <span class="layout-section-image-description"
+                  >Best Sellers</span
+                >
+              </a>
+            </li>
+            <li class="layout-section-container-ul-li">
+              <a href="#" class="layout-section-container-ul-li-anchor">
+                <picture class="layout-section-image-style-container">
+                  <img
+                    src="assets/images/header_images/layout_VIP.jpg"
+                    alt=""
+                  />
+                </picture>
+                <span class="layout-section-image-description">VIP</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </header>
     <!--TAHA HEADER SECTION END-->

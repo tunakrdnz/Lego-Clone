@@ -178,7 +178,7 @@
   margin: 0px auto;
   // padding: 0px 1.875rem;
   width: 100%;
-  max-width: 100rem;
+  max-width: 100%;
   display: flex;
   align-items: center;
 }
@@ -335,15 +335,110 @@
   }
 }
 
+.main-image-section {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin-bottom: 1.875rem;
+  margin: 0px auto;
+  background-color: white;
+  &-anchor {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #006db7;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  &-image-container {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    transition: opacity 0.3s ease-in 0s;
+    opacity: 1;
+    // position: absolute;
+    inset: 0px;
+    cursor: pointer;
+    // padding-top: 31.25%;
+  }
+  &-picture {
+    // position: absolute;
+    inset: 0px;
+    cursor: pointer;
+  }
+  &-picture-image {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    inset: 0px;
+    border-style: none;
+  }
+}
+
+.layout-section {
+  width: 98vw;
+  max-width: 100rem;
+  margin: 0px auto;
+  background-color: white;
+  display: block;
+  // @media (min-width: 1201px) {
+  //   max-width: 100rem;
+  //   margin: 0px auto;
+  // }
+  &-container {
+    max-width: 82.5rem;
+    margin: 0px auto;
+    padding: 2.5rem 1.25rem;
+    display: flex;
+    line-height: 1.125rem;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    &-ul {
+      &-li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 6.25rem;
+        margin-right: 1.875rem;
+        margin-bottom: 0.625rem;
+        list-style: none;
+        &-anchor {
+          text-decoration: none;
+          max-width: 6.25rem;
+          color: black;
+          cursor: pointer;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  &-image-style-container {
+    margin: 0px auto 0.75rem;
+    vertical-align: middle;
+    transition: opacity 0.3s ease-in 0s;
+    opacity: 1;
+    position: static;
+    max-width: 100%;
+    width: auto;
+    // border: solid 5px red;
+  }
+  &-image-description {
+    line-height: 0.9375rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+}
 //Note for Tuna
 //This is the end of new code
 
-// .leftArrow {
-//
-// }
-// .rightArrow {
-//   height: 18px;
-// }
 // .mainBarMenu {
 //   display: flex;
 //   align-items: center;
@@ -405,11 +500,6 @@
 //   font-size: 0.75rem;
 //   color: black;
 // }
-.legoLogo {
-  width: auto;
-  height: 55px;
-  margin-left: -340px;
-}
 // .logo-container {
 //   display: flex;
 //   flex-direction: row;
