@@ -1,26 +1,3 @@
-@font-face {
-  font-family: Cera bold;
-  src: url(./assets/fonts/cera-pro-sv/Cera\ Pro\ Bold.otf);
-}
-@font-face {
-  font-family: Cera light;
-  src: url(./assets/fonts/cera-pro-sv/Cera\ Pro\ Light.otf);
-}
-@font-face {
-  font-family: Cera medium;
-  src: url(./assets/fonts/cera-pro-sv/Cera\ Pro\ Medium.otf);
-}
-@font-face {
-    font-family: Cera blk;
-    src: url(./assets/fonts/cera-pro-sv/Cera\ Pro\ Black.otf);
-  }
-
-*{
-  box-sizing: border-box;
-  margin: 0px;
-  /*font-family: Cera light;*/
-}
-
 .header-desktop {
   z-index: 3;
   position: relative;
@@ -201,7 +178,6 @@
   border-style: none;
 }
 
-
 .utility-bar-vip-span {
   font-size: 0.75rem;
   line-height: 1.1875rem;
@@ -257,9 +233,7 @@
   margin-inline-end: 1em;
   padding-inline-start: 40px;
 }
-.main-bar-menu-li1,
-.main-bar-menu-li2,
-.main-bar-menu-li3 {
+.main-bar-menu-li1, .main-bar-menu-li2, .main-bar-menu-li3 {
   display: flex;
   align-items: center;
   white-space: nowrap;
@@ -464,7 +438,6 @@
   font-weight: 400;
 }
 
-
 .recommended-part-container {
   display: flex;
 }
@@ -562,17 +535,11 @@
 
 @font-face {
   font-family: "CeraPro";
-  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"),
-    url("../fonts/CeraPro-Bold.woff2") format("woff2"),
-    url("../fonts/CeraPro-Medium.woff2") format("woff2");
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Bold.woff2") format("woff2"), url("../fonts/CeraPro-Medium.woff2") format("woff2");
   font-size: 40px;
 }
 :root {
   font-family: "CeraPro";
-  --yellow: rgb(255,207,0);
-  --red: rgb(208,2,27);
-  --orange: rgb(253,128,36);
-  --gray: rgb(224, 224, 224);
 }
 
 .footerContainer {
@@ -719,7 +686,31 @@
   width: 100px;
 }
 
-.featured-sets-wholebody-container{
+/*@font-face   src: url(./cera-pro-sv/Cera\ Pro\ Bold.otf);
+}
+@font-face 
+  src: url(./cera-pro-sv/Cera\ Pro\ Light.otf);
+}
+@font-face ;
+  src: url(./cera-pro-sv/Cera\ Pro\ Medium.otf);
+}
+@font-face    src: url(./cera-pro-sv/Cera\ Pro\ Black.otf);
+  }*/
+@font-face {
+  font-family: "CeraPro";
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Bold.woff2") format("woff2"), url("../fonts/CeraPro-Medium.woff2") format("woff2");
+  font-size: 40px;
+}
+:root {
+  font-family: "CeraPro";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.featured-sets-wholebody-container {
   display: flex;
   flex-direction: row;
   gap: 25px;
@@ -728,12 +719,11 @@
   overscroll-behavior-inline: contain;
 }
 
-
-.smallImageDisplay{
+.smallImageDisplay {
   width: 67% !important;
 }
-.featured-sets{
-  font-family: Cera light;
+
+.featured-sets {
   font-weight: 900;
   font-size: 32px;
   color: #2C2C2C;
@@ -744,8 +734,7 @@
   display: block;
 }
 
-#newfeaturedSets{
-  font-family: Cera light;
+#newfeaturedSets {
   font-weight: 900;
   font-size: 32px;
   color: #2C2C2C;
@@ -756,15 +745,16 @@
   display: block;
 }
 
-.product-container{
+.product-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  min-width: calc(100% / 4);
+  min-width: 25%;
   position: relative;
   transition: transform 1000ms ease-in-out;
 }
-.image-container{
+
+.image-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -774,15 +764,15 @@
   position: relative;
 }
 
-.image-container > img{
+.image-container > img {
   transition: transform 500ms ease-in-out 0s;
   z-index: 0;
   width: 85%;
   object-fit: cover;
 }
 
-.transparent-container{
-  border: 1px solid var(--gray);
+.transparent-container {
+  border: 1px solid rgb(224, 224, 224);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -792,26 +782,28 @@
   height: 300px;
   position: relative;
 }
-.transparent-container:hover .image-container > img{
+
+.transparent-container:hover .image-container > img {
   transform: scale(1.13);
 }
-.lateness{
+
+.lateness {
   font-size: 12px;
-  background-color: var(--yellow);
+  background-color: rgb(255, 207, 0);
   width: fit-content;
   padding: 3px 8px;
-  font-family: Cera light;
 }
-.price-discount{
-  background-color: var(--red);
+
+.price-discount {
+  background-color: rgb(208, 2, 27);
   width: fit-content;
   padding: 3px 3px;
-  font-family: Cera medium;
   font-size: 12px;
   font-weight: 500;
   color: white;
 }
-.product-predetails{
+
+.product-predetails {
   display: flex;
   gap: 20px;
   position: absolute;
@@ -819,7 +811,8 @@
   bottom: 5px;
   z-index: 1;
 }
-.add-wish-list{
+
+.add-wish-list {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -829,19 +822,20 @@
   left: 5px;
   z-index: 1;
 }
-.svg-container{
+
+.svg-container {
   height: 30px;
   width: 30px;
 }
-.add-to-wish-list-text{
-  font-size: 12px !important;
-  font-family: Cera light !important;
-  font-weight: bold !important;
+
+.add-to-wish-list-text {
+  font-size: 12px;
+  font-weight: bold;
 }
-#add-to-bag-button{
+
+#add-to-bag-button {
   height: 55px;
-  background-color: var(--orange);
-  font-family: Cera light;
+  background-color: rgb(253, 128, 36);
   font-weight: 600;
   border: none;
   border-radius: 5px;
@@ -849,69 +843,58 @@
   font-size: 14px;
   width: unset;
 }
-#add-to-bag-button:hover{
-  border: 2px solid var(--orange);
+
+#add-to-bag-button:hover {
+  border: 2px solid rgb(253, 128, 36);
   background-color: white;
 }
-.product-name{
-font-family: Cera medium;
-}
-.product-price{
- font-family: Cera medium; 
-}
-.product-rating{
+
+.product-rating {
   display: flex;
   flex-direction: row;
 }
-#discounted-price{
+
+#discounted-price {
   font-size: inherit;
-  font-family: Cera bold;
   font-weight: inherit;
-  color: var(--red);
+  color: rgb(208, 2, 27);
 }
-#product-original-price{
-  font-family: Cera medium;
+
+#product-original-price {
   text-decoration: line-through;
 }
 
-.featured-sets-wholebody-container>section:nth-child(2) div[class="product-predetails"],
-.featured-sets-wholebody-container>section:nth-child(3) div[class="product-predetails"],
-.featured-sets-wholebody-container>section:nth-child(4) div[class="product-predetails"],
-.featured-sets-wholebody-container>section:nth-child(7) div[class="product-predetails"],
-.featured-sets-wholebody-container>section:nth-child(8) div[class="product-predetails"],
-.featured-sets-wholebody-container>section:nth-child(9) div[class="product-predetails"],
-.featured-sets-wholebody-container>section:nth-child(10) div[class="product-predetails"],
-.featured-sets-wholebody-container>section:nth-child(11) div[class="product-predetails"],
-.featured-sets-wholebody-container>section:nth-child(12) div[class="product-predetails"],
-.featured-sets-wholebody-container>section:nth-child(13) div[class="product-predetails"],
-.featured-sets-wholebody-container>section:nth-child(14) div[class="product-predetails"]{
+.featured-sets-wholebody-container > section:nth-child(2) div[class=product-predetails],
+.featured-sets-wholebody-container > section:nth-child(3) div[class=product-predetails],
+.featured-sets-wholebody-container > section:nth-child(4) div[class=product-predetails],
+.featured-sets-wholebody-container > section:nth-child(7) div[class=product-predetails],
+.featured-sets-wholebody-container > section:nth-child(8) div[class=product-predetails],
+.featured-sets-wholebody-container > section:nth-child(9) div[class=product-predetails],
+.featured-sets-wholebody-container > section:nth-child(10) div[class=product-predetails],
+.featured-sets-wholebody-container > section:nth-child(11) div[class=product-predetails],
+.featured-sets-wholebody-container > section:nth-child(12) div[class=product-predetails],
+.featured-sets-wholebody-container > section:nth-child(13) div[class=product-predetails],
+.featured-sets-wholebody-container > section:nth-child(14) div[class=product-predetails] {
   display: none;
 }
 
-.featured-sets-wholebody-container>section:nth-child(5) div[class="price-discount"],
-.featured-sets-wholebody-container>section:nth-child(6) div[class="price-discount"],
-.featured-sets-wholebody-container>section:nth-child(15) div[class="price-discount"],
-.featured-sets-wholebody-container>section:nth-child(16) div[class="price-discount"]{
+.featured-sets-wholebody-container > section:nth-child(5) div[class=price-discount],
+.featured-sets-wholebody-container > section:nth-child(6) div[class=price-discount],
+.featured-sets-wholebody-container > section:nth-child(15) div[class=price-discount],
+.featured-sets-wholebody-container > section:nth-child(16) div[class=price-discount] {
   display: none;
 }
-body{
-  display: flex;
-  align-items: center;
-  padding-top: 50px;
-  flex-direction: column;
-  padding-bottom: 50px;
-}
 
-.wrapper{
+.wrapper {
   display: flex;
   position: relative;
   width: fit-content;
 }
 
-.wrapper i{
+.wrapper i {
   top: 30%;
   height: 44px;
-  border: 1px solid rgb(217,217,217);
+  border: 1px solid rgb(217, 217, 217);
   width: 44px;
   color: #343F4F;
   cursor: pointer;
@@ -925,47 +908,51 @@ body{
   transition: transform 0.1s linear;
 }
 
-
-.wrapper i:active{
+.wrapper i:active {
   transform: translateY(-50%) scale(0.9);
 }
-.wrapper i:hover{
+
+.wrapper i:hover {
   background: #f2f2f2;
 }
-.wrapper i:first-child{
+
+.wrapper i:first-child {
   left: -55px;
   display: none;
 }
-.wrapper i:last-child{
+
+.wrapper i:last-child {
   right: -55px;
 }
 
-.wrapper >.carousel{
+.wrapper > .carousel {
   cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
 }
 
-.carousel.dragging{
+.carousel.dragging {
   cursor: grab;
   scroll-behavior: auto;
 }
-.carousel.dragging > section{
+
+.carousel.dragging > section {
   pointer-events: none;
 }
 
-.carousel section{
+.carousel section {
   object-fit: cover;
   user-select: none;
 }
-.carousel section:first-child{
+
+.carousel section:first-child {
   margin-left: 0px;
 }
 
-#runnerBarCont{
+#runnerBarCont {
   width: 60%;
-  background-color: rgb(217,217,217);
+  background-color: rgb(217, 217, 217);
   display: flex;
   height: 5px;
   white-space: nowrap;
@@ -975,20 +962,21 @@ body{
   margin-top: 40px;
   position: relative;
 }
-#runnerBar{
-  background-color: rgb(98,98,98);
-  width: calc(100% / 4);
+
+#runnerBar {
+  background-color: rgb(98, 98, 98);
+  width: 25%;
   height: inherit;
   scroll-behavior: smooth;
   transition: transform 400ms ease-in-out 0s;
 }
-#runnerBarCont.dragging{
+
+#runnerBarCont.dragging {
   cursor: grab;
   scroll-behavior: auto;
 }
 
-
-.the-latest{
+.the-latest {
   width: 84.5vw;
   display: flex;
   flex-direction: row;
@@ -996,61 +984,68 @@ body{
   align-items: center;
   justify-content: center;
 }
-.latest-img-container{
+
+.latest-img-container {
   object-fit: cover;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.latest-img-container:hover .latest-img-container>a{
+
+.latest-img-container:hover .latest-img-container > a {
   border-bottom: black;
 }
-.latest-img-container>img{  
+
+.latest-img-container > img {
   width: 100%;
   height: 100%;
 }
 
-.absolutePosition{
+.absolutePosition {
   position: absolute;
 }
-.latest-img-container>h3{
+
+.latest-img-container > h3 {
   top: 50px;
   font-size: 1.5rem;
 }
-.latest-img-container>p{
+
+.latest-img-container > p {
   top: 100px;
   font-size: 0.85rem;
 }
-.latest-img-container>a{
+
+.latest-img-container > a {
   top: 150px;
   text-decoration: none;
   color: black;
   font-size: 1rem;
 }
 
-#secondLatestImgCont *{
+#secondLatestImgCont * {
   color: white !important;
 }
-#secondLatestImgCont:hover #mustHover2{
+
+#secondLatestImgCont:hover #mustHover2 {
   text-decoration: underline !important;
 }
-#firstLatestImgCont:hover #mustHover1{
+
+#firstLatestImgCont:hover #mustHover1 {
   text-decoration: underline !important;
 }
-#assLogo1, #assLogo2{
+
+#assLogo1, #assLogo2 {
   max-width: 200px;
   max-height: 60px;
   bottom: 15px !important;
   right: 15px !important;
   position: absolute !important;
 }
-#assLogo2{
+
+#assLogo2 {
   max-width: 150px !important;
   max-height: 50px !important;
 }
-
-
-
 
 /*# sourceMappingURL=index.css.map */
