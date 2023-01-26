@@ -1,10 +1,15 @@
+body {
+  margin: 0px;
+}
+
 .header-desktop {
-  z-index: 3;
-  position: relative;
+  z-index: 100;
+  position: sticky;
   left: 0px;
   right: 0px;
   top: 0px;
   background-color: rgb(248, 248, 248);
+  transition: 0s ease-in 0.3s;
 }
 
 .utility-bar-container {
@@ -185,6 +190,12 @@
   font-weight: 500;
 }
 
+.main-bar-for-margin {
+  padding: 0 7.5rem;
+  max-width: 100vw;
+  background-color: rgb(255, 207, 0);
+}
+
 .main-bar-container {
   background-color: rgb(255, 207, 0);
   height: 4.6875rem;
@@ -199,7 +210,8 @@
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0px 30px;
+  padding: 0px auto;
+  margin: 0 auto;
 }
 
 .main-bar-main-navigation-anchor {
@@ -354,6 +366,78 @@
   margin: 0px auto;
   background-color: white;
 }
+.main-image-section-on-image-container {
+  position: absolute;
+  background-color: transparent;
+  text-align: left;
+  top: 30%;
+  left: 15%;
+  transform: translateY(-20%);
+  max-width: 35%;
+  width: 520px;
+}
+.main-image-section-on-image-text {
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+  margin: 0px;
+  font-weight: 400;
+  color: white;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  cursor: default;
+}
+.main-image-section-on-image-text-span {
+  cursor: default;
+  font-size: 1rem;
+  color: white;
+  font-weight: 400;
+  text-align: left;
+  max-width: 35%;
+}
+.main-image-section-on-image-text-span {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-top: 0.9375rem;
+  display: inline;
+}
+.main-image-section-on-image-button-container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 500px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main-image-section-on-image-button {
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  padding: 0.625rem 0.9375rem;
+  margin-left: 0.625rem;
+  margin-right: 1rem;
+  pointer-events: all;
+  display: inline-block;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-weight: 500;
+  background: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-collapse: collapse;
+  text-align: center;
+  border-color: transparent;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: white;
+  color: black;
+  width: 200vw;
+  text-decoration: none;
+  cursor: pointer;
+}
+.main-image-section-on-image-button:hover {
+  color: white;
+  background-color: black;
+}
 .main-image-section-anchor {
   cursor: pointer;
   display: block;
@@ -389,53 +473,52 @@
 }
 
 .layout-section {
-  width: 98vw;
-  max-width: 100rem;
-  margin: 0px auto;
-  background-color: white;
-  display: block;
+  height: 203px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .layout-section-container {
+  align-items: center;
+  margin: 0px 20.5px;
+  padding: 40px 20px;
   max-width: 82.5rem;
-  margin: 0px auto;
-  padding: 2.5rem 1.25rem;
+}
+.layout-section-container-ul {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   line-height: 1.125rem;
   justify-content: center;
-  flex-wrap: nowrap;
+  align-items: center;
   padding: 0;
   margin: 0;
-  list-style: none;
 }
 .layout-section-container-ul-li {
   display: flex;
   flex-direction: column;
   text-align: center;
+  list-style-type: none;
   max-width: 6.25rem;
   margin-right: 1.875rem;
   margin-bottom: 0.625rem;
-  list-style: none;
 }
 .layout-section-container-ul-li-anchor {
   text-decoration: none;
-  max-width: 6.25rem;
   color: black;
+  max-width: 6.25rem;
   cursor: pointer;
   background-color: transparent;
-}
-.layout-section-image-style-container {
-  margin: 0px auto 0.75rem;
-  vertical-align: middle;
-  transition: opacity 0.3s ease-in 0s;
-  opacity: 1;
-  position: static;
-  max-width: 100%;
-  width: auto;
-}
-.layout-section-image-description {
-  line-height: 0.9375rem;
+  text-align: center;
   font-size: 0.75rem;
-  font-weight: 400;
+}
+.layout-section-container-ul-li-anchor:hover {
+  text-decoration: underline;
+  color: #006db7;
+}
+.layout-section-container-ul-li-anchor img {
+  width: 80px;
+  height: 65px;
 }
 
 .recommended-part-container {
@@ -447,8 +530,19 @@
   flex-direction: row;
 }
 
+.trending-now-section {
+  padding: 4em;
+}
+
 .trending-now-container {
   display: flex;
+  flex-flow: row wrap;
+}
+
+.trending-now-container-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .trending-now-cards-wrapper {
