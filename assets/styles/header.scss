@@ -1,10 +1,14 @@
+body {
+  margin: 0px;
+}
 .header-desktop {
-  z-index: 3;
-  position: relative;
+  z-index: 100;
+  position: sticky;
   left: 0px;
   right: 0px;
   top: 0px;
   background-color: rgb(248, 248, 248);
+  transition: 0s ease-in 0.3s;
 }
 .utility-bar-container {
   position: relative;
@@ -169,7 +173,12 @@
   color: black;
   font-weight: 500;
 }
-
+.main-bar-for-margin {
+  // border: 5px solid pink;
+  padding: 0 7.5rem;
+  max-width: 100vw;
+  background-color: rgb(255, 207, 0);
+}
 .main-bar-container {
   background-color: rgb(255, 207, 0);
   height: 4.6875rem;
@@ -184,7 +193,8 @@
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0px 30px;
+  padding: 0px auto;
+  margin: 0 auto;
 }
 .main-bar-main-navigation-anchor {
   margin-right: 4.0625rem;
