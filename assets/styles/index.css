@@ -1,3 +1,26 @@
+@font-face {
+  font-family: Cera bold;
+  src: url(./assets/fonts/cera-pro-sv/Cera\ Pro\ Bold.otf);
+}
+@font-face {
+  font-family: Cera light;
+  src: url(./assets/fonts/cera-pro-sv/Cera\ Pro\ Light.otf);
+}
+@font-face {
+  font-family: Cera medium;
+  src: url(./assets/fonts/cera-pro-sv/Cera\ Pro\ Medium.otf);
+}
+@font-face {
+    font-family: Cera blk;
+    src: url(./assets/fonts/cera-pro-sv/Cera\ Pro\ Black.otf);
+  }
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  /*font-family: Cera light;*/
+}
+
 .header-desktop {
   z-index: 3;
   position: relative;
@@ -696,29 +719,6 @@
   width: 100px;
 }
 
-@font-face {
-  font-family: Cera bold;
-  src: url(./assets/fonts/cera-pro-sv/Cera\ Pro\ Bold.otf);
-}
-@font-face {
-  font-family: Cera light;
-  src: url(./assets/fonts/cera-pro-sv/Cera\ Pro\ Light.otf);
-}
-@font-face {
-  font-family: Cera medium;
-  src: url(./assets/fonts/cera-pro-sv/Cera\ Pro\ Medium.otf);
-}
-@font-face {
-    font-family: Cera blk;
-    src: url(./assets/fonts/cera-pro-sv/Cera\ Pro\ Black.otf);
-  }
-
-*{
-  box-sizing: border-box;
-  margin: 0px;
-  font-family: Cera light;
-}
-
 .featured-sets-wholebody-container{
   display: flex;
   flex-direction: row;
@@ -834,9 +834,9 @@
   width: 30px;
 }
 .add-to-wish-list-text{
-  font-size: 12px;
-  font-family: Cera light;
-  font-weight: bold;
+  font-size: 12px !important;
+  font-family: Cera light !important;
+  font-weight: bold !important;
 }
 #add-to-bag-button{
   height: 55px;
