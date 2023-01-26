@@ -366,6 +366,78 @@ body {
   margin: 0px auto;
   background-color: white;
 }
+.main-image-section-on-image-container {
+  position: absolute;
+  background-color: transparent;
+  text-align: left;
+  top: 30%;
+  left: 15%;
+  transform: translateY(-20%);
+  max-width: 35%;
+  width: 520px;
+}
+.main-image-section-on-image-text {
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+  margin: 0px;
+  font-weight: 400;
+  color: white;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  cursor: default;
+}
+.main-image-section-on-image-text-span {
+  cursor: default;
+  font-size: 1rem;
+  color: white;
+  font-weight: 400;
+  text-align: left;
+  max-width: 35%;
+}
+.main-image-section-on-image-text-span {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-top: 0.9375rem;
+  display: inline;
+}
+.main-image-section-on-image-button-container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 500px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main-image-section-on-image-button {
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  padding: 0.625rem 0.9375rem;
+  margin-left: 0.625rem;
+  margin-right: 1rem;
+  pointer-events: all;
+  display: inline-block;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-weight: 500;
+  background: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-collapse: collapse;
+  text-align: center;
+  border-color: transparent;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: white;
+  color: black;
+  width: 200vw;
+  text-decoration: none;
+  cursor: pointer;
+}
+.main-image-section-on-image-button:hover {
+  color: white;
+  background-color: black;
+}
 .main-image-section-anchor {
   cursor: pointer;
   display: block;
