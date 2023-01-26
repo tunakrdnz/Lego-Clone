@@ -245,9 +245,7 @@ body {
   margin-inline-end: 1em;
   padding-inline-start: 40px;
 }
-.main-bar-menu-li1,
-.main-bar-menu-li2,
-.main-bar-menu-li3 {
+.main-bar-menu-li1, .main-bar-menu-li2, .main-bar-menu-li3 {
   display: flex;
   align-items: center;
   white-space: nowrap;
@@ -532,8 +530,19 @@ body {
   flex-direction: row;
 }
 
+.trending-now-section {
+  padding: 4em;
+}
+
 .trending-now-container {
   display: flex;
+  flex-flow: row wrap;
+}
+
+.trending-now-container-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .trending-now-cards-wrapper {
@@ -620,9 +629,7 @@ body {
 
 @font-face {
   font-family: "CeraPro";
-  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"),
-    url("../fonts/CeraPro-Bold.woff2") format("woff2"),
-    url("../fonts/CeraPro-Medium.woff2") format("woff2");
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Bold.woff2") format("woff2"), url("../fonts/CeraPro-Medium.woff2") format("woff2");
   font-size: 40px;
 }
 :root {

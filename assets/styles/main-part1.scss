@@ -5,8 +5,17 @@
   display: flex;
   flex-direction: row;
 }
+.trending-now-section {
+  padding: 4em;
+}
 .trending-now-container {
   display: flex;
+  flex-flow: row wrap;
+}
+.trending-now-container-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 .trending-now-cards-wrapper {
   display: flex;
