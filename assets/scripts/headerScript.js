@@ -1,11 +1,11 @@
-// function a() {
-//   var x = document.getElementById("headerSliderText");
-//   if (x.innerHTML === "Hello") {
-//     x.innerHTML = "Swapped text!";
-//   } else {
-//     x.innerHTML = "Hello";
-//   }
-// }
+var button = document.getElementById("headerSliderText");
+var sliderArray = ["New Textttt", "second text", "third text"];
+function buttonSlider() {
+  for (let i = 0; i < sliderArray.length; i++) {
+    button.innerHTML = sliderArray[i];
+    console.log(i);
+  }
+}
 
 // header navigation bar scroll event v1
 // var lastScrollTop = 0;
