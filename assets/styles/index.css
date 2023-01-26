@@ -178,7 +178,6 @@
   border-style: none;
 }
 
-
 .utility-bar-vip-span {
   font-size: 0.75rem;
   line-height: 1.1875rem;
@@ -392,55 +391,53 @@
 }
 
 .layout-section {
-  width: 98vw;
-  max-width: 100rem;
-  margin: 0px auto;
-  background-color: white;
-  display: block;
+  height: 203px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .layout-section-container {
+  align-items: center;
+  margin: 0px 20.5px;
+  padding: 40px 20px;
   max-width: 82.5rem;
-  margin: 0px auto;
-  padding: 2.5rem 1.25rem;
+}
+.layout-section-container-ul {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   line-height: 1.125rem;
   justify-content: center;
-  flex-wrap: nowrap;
+  align-items: center;
   padding: 0;
   margin: 0;
-  list-style: none;
 }
 .layout-section-container-ul-li {
   display: flex;
   flex-direction: column;
   text-align: center;
+  list-style-type: none;
   max-width: 6.25rem;
   margin-right: 1.875rem;
   margin-bottom: 0.625rem;
-  list-style: none;
 }
 .layout-section-container-ul-li-anchor {
   text-decoration: none;
-  max-width: 6.25rem;
   color: black;
+  max-width: 6.25rem;
   cursor: pointer;
   background-color: transparent;
-}
-.layout-section-image-style-container {
-  margin: 0px auto 0.75rem;
-  vertical-align: middle;
-  transition: opacity 0.3s ease-in 0s;
-  opacity: 1;
-  position: static;
-  max-width: 100%;
-  width: auto;
-}
-.layout-section-image-description {
-  line-height: 0.9375rem;
+  text-align: center;
   font-size: 0.75rem;
-  font-weight: 400;
 }
-
+.layout-section-container-ul-li-anchor:hover {
+  text-decoration: underline;
+  color: #006db7;
+}
+.layout-section-container-ul-li-anchor img {
+  width: 80px;
+  height: 65px;
+}
 
 .recommended-part-container {
   display: flex;
