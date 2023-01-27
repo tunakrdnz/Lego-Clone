@@ -17,6 +17,8 @@ let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, position
 
 let IsDragStart = false, IsDragging = false, PrevPageX, PrevScrollLeft, PositionDiff;
 
+let counterR = 0;
+
 const showHideIcons = () => {
     // showing and hiding prev/next icon according to carousel scroll left value
     let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
@@ -32,21 +34,29 @@ arrowIcons.forEach(icon => {
         // getting first img width & adding 14 margin value
         // if clicked icon is left, reduce width value from the carousel scroll left else add to it
         // carousel.scrollLeft += icon.id == "left" ? -slidePace*firstImgWidth; runnerPace = runnerPace-1 : slidePace*firstImgWidth;
-        if (icon.id == "left"){
+        if (icon.id === "left"){
+            if (counterR == -1){return}
             carousel.scrollLeft += -slidePace*firstSlideWidth - 25*(slidePace);
-            // runnerPace = runnerPace-1;
+            counterR = counterR - 1;
+            console.log("in left", counterR);
+            runnerBar.style.transform = `translateX(${(slidePace*firstSlideWidth + 75)*(counterR)*100/(carousel.clientWidth + 18.75)}%)`;
         }else{
             carousel.scrollLeft += slidePace*firstSlideWidth + 25*(slidePace);
-            // runnerPace = runnerPace+1;
-            // runnerBar.scrollLeft = -200;
-            // console.log("runnerScrollleft", runnerBar.scrollLeft);
+            if (counterR === 1){
+                runnerBar.style.transform = `translateX(${(slidePace*firstSlideWidth + 75)*(counterR+1)*100/(carousel.clientWidth + 18.75)}%)`;
+                counterR = counterR + 1;
+            }
+            else if (carousel.scrollLeft == 0 || counterR == 0){
+                runnerBar.style.transform = `translateX(${(slidePace*firstSlideWidth + 75)*(counterR+1)*100/(carousel.clientWidth + 18.75)}%)`;
+                counterR = counterR + 1;
+            }else if(counterR == 2){
+                runnerBar.style.transform = `translateX(${(slidePace*firstSlideWidth + 75)*(counterR+1)*100/(carousel.clientWidth)}%)`;
+                counterR = counterR + 1;
+                // runnerBar.style.transform = `translateX(${carousel.scrollLeft*100/(carousel.clientWidth + 18.75)}%)`;
+            }
         }
-        console.log("carousel scrolleft", carousel.scrollLeft);
-        if (carousel.scrollLeft == 0){
-            runnerBar.style.transform = `translateX(${slidePace*firstSlideWidth*100/(carousel.clientWidth + 18.75)}%)`;
-        }else{
-            runnerBar.style.transform = `translateX(${carousel.scrollLeft*100/(carousel.clientWidth + 18.75)}%)`;
-        }
+        console.log("starting counterR", counterR);
+        
         
         // let toUse = carousel.scrollLeft == 0 ? firstImgWidth : carousel.scrollLeft;
         // console.log("toUse", toUse);

@@ -521,6 +521,19 @@ body {
   height: 65px;
 }
 
+/*John => Here is the style we can remove it later - added the classes*/
+.carouselCollect {
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  width: 100%;
+}
+
+.widthToBe100 {
+  width: 100%;
+}
+
 .recommended-part-container {
   display: flex;
 }
@@ -638,7 +651,7 @@ body {
 
 .footerContainer {
   display: flex;
-  width: 100vw;
+  width: 100%;
   background: rgb(45, 15, 73);
   padding-left: 100px;
   padding-top: 50px;
@@ -809,6 +822,7 @@ body {
   flex-direction: row;
   gap: 25px;
   width: 84.5vw;
+  border: 1px solid transparent;
   overflow: hidden;
   overscroll-behavior-inline: contain;
 }
@@ -983,6 +997,7 @@ body {
   display: flex;
   position: relative;
   width: fit-content;
+  margin-left: 7vw;
 }
 
 .wrapper i {
@@ -1055,6 +1070,8 @@ body {
   cursor: pointer;
   margin-top: 40px;
   position: relative;
+  margin-left: 20vw;
+  margin-bottom: 40px;
 }
 
 #runnerBar {
@@ -1077,6 +1094,7 @@ body {
   gap: 20px;
   align-items: center;
   justify-content: center;
+  margin-left: 7vw;
 }
 
 .latest-img-container {

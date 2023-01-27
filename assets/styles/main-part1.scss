@@ -1,3 +1,16 @@
+/*John => Here is the style we can remove it later - added the classes*/
+
+.carouselCollect{
+  border: 1px solid gray; 
+  display: flex; 
+  flex-direction: column; 
+  overflow: scroll; 
+  width: 100%;
+}
+
+.widthToBe100{
+  width: 100%;
+}
 .recommended-part-container {
   display: flex;
 }
