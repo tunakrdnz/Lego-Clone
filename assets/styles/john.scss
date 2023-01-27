@@ -23,6 +23,7 @@
       flex-direction: row;
       gap: 25px;
       width: 84.5vw;
+      border: 1px solid transparent;
       overflow: hidden;
       overscroll-behavior-inline: contain;
   }
@@ -185,6 +186,7 @@
       display: flex;
       position: relative;
       width: fit-content;
+      margin-left: 7vw;
   }
   
   .wrapper i{
@@ -253,6 +255,8 @@
       cursor: pointer;
       margin-top: 40px;
       position: relative;
+      margin-left: 20vw;
+      margin-bottom: 40px;
     }
     #runnerBar{
       background-color: rgb(98,98,98);
@@ -274,6 +278,7 @@
       gap: 20px;
       align-items: center;
       justify-content: center;
+      margin-left: 7vw;
   }
   .latest-img-container{
       object-fit: cover;
