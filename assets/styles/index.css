@@ -521,6 +521,19 @@ body {
   height: 65px;
 }
 
+/*John => Here is the style we can remove it later - added the classes*/
+.carouselCollect {
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  width: 100%;
+}
+
+.widthToBe100 {
+  width: 100%;
+}
+
 .recommended-part-container {
   display: flex;
 }
@@ -693,8 +706,8 @@ body {
 
 .footerContainer {
   display: flex;
-  width: 100vw;
-  background: rgb(45, 15, 73);
+  width: 100%;
+  background: rgb(32, 29, 72);
   padding-left: 100px;
   padding-top: 50px;
 }
@@ -711,7 +724,7 @@ body {
 }
 
 .footer_selectionRegion {
-  background: rgb(35, 12, 55);
+  background: rgb(24, 21, 45);
   width: 100px;
   height: 20px;
   text-align: center;
@@ -826,13 +839,88 @@ body {
 }
 
 .footerSocialMedia {
-  width: auto;
-  height: 200px;
+  padding-top: 60px;
+  width: 100vw;
+  background: rgb(32, 29, 72);
+  text-align: right;
+  display: block;
+}
+
+.footer_followUs {
+  color: white;
 }
 
 .social-facebook {
   height: 100px;
   width: 100px;
+}
+
+#social-facebook {
+  height: 50px;
+  width: 50px;
+}
+
+.social-twitter {
+  height: 100px;
+  width: 100px;
+}
+
+#social-twitter {
+  height: 50px;
+  width: 50px;
+}
+
+.social-instagram {
+  height: 100px;
+  width: 100px;
+}
+
+#social-instagram {
+  height: 50px;
+  width: 50px;
+}
+
+.social-youtube {
+  height: 100px;
+  width: 100px;
+}
+
+#social-youtube {
+  height: 50px;
+  width: 50px;
+}
+
+.footerWrapper {
+  padding-top: 100px;
+  background: rgb(32, 29, 72);
+  color: white;
+}
+
+.footerWrapper_generalInfo {
+  display: flex;
+}
+
+#footerWrapper_generalInfo_item {
+  color: white;
+  text-decoration: none;
+}
+
+.footerWrapper_generalInfo_item:first-child {
+  padding-left: 120px;
+}
+
+.footerWrapper_generalInfo_item {
+  padding-right: 40px;
+}
+
+.footerWrapper_generalInfo_item:hover {
+  text-decoration: underline;
+}
+
+.footerWrapper_credentials {
+  padding-left: 120px;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 /*@font-face   src: url(./cera-pro-sv/Cera\ Pro\ Bold.otf);
@@ -855,7 +943,6 @@ body {
 }
 
 * {
-  box-sizing: border-box;
   margin: 0px;
 }
 
@@ -864,6 +951,7 @@ body {
   flex-direction: row;
   gap: 25px;
   width: 84.5vw;
+  border: 1px solid transparent;
   overflow: hidden;
   overscroll-behavior-inline: contain;
 }
@@ -1038,6 +1126,7 @@ body {
   display: flex;
   position: relative;
   width: fit-content;
+  margin-left: 7vw;
 }
 
 .wrapper i {
@@ -1110,6 +1199,8 @@ body {
   cursor: pointer;
   margin-top: 40px;
   position: relative;
+  margin-left: 20vw;
+  margin-bottom: 40px;
 }
 
 #runnerBar {
@@ -1132,6 +1223,7 @@ body {
   gap: 20px;
   align-items: center;
   justify-content: center;
+  margin-left: 7vw;
 }
 
 .latest-img-container {
