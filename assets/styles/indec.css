@@ -640,7 +640,9 @@ body {
   justify-content: center;
 }
 
-
+.shopnow-button {
+  border-bottom: 1px solid black;
+}
 
 .shopnow {
   font-size: 1rem;
@@ -712,7 +714,7 @@ body {
 
 .footerContainer {
   display: flex;
-  width: auto;
+  width: 100%;
   background: rgb(32, 29, 72);
   padding-left: 100px;
   padding-top: 50px;
@@ -846,18 +848,14 @@ body {
 
 .footerSocialMedia {
   padding-top: 60px;
-  width: auto;
-  padding-right: 300px;
+  width: 100vw;
   background: rgb(32, 29, 72);
   text-align: right;
   display: block;
 }
 
 .footer_followUs {
-  font-size: 20px;
   color: white;
-  padding-right: 170px;
-  padding-bottom: 20px;
 }
 
 .social-facebook {
@@ -877,7 +875,7 @@ body {
 
 #social-twitter {
   height: 50px;
-  width: 60px;
+  width: 50px;
 }
 
 .social-instagram {
@@ -897,8 +895,7 @@ body {
 
 #social-youtube {
   height: 50px;
-  width: 90px;
-  padding-left: -20px;
+  width: 50px;
 }
 
 .footerWrapper {
@@ -922,7 +919,6 @@ body {
 
 .footerWrapper_generalInfo_item {
   padding-right: 40px;
-  font-size: small;
 }
 
 .footerWrapper_generalInfo_item:hover {
@@ -933,7 +929,6 @@ body {
   padding-left: 120px;
   padding-top: 40px;
   padding-bottom: 80px;
-  font-size: small;
 }
 
 /*@font-face   src: url(./cera-pro-sv/Cera\ Pro\ Bold.otf);
@@ -1302,4 +1297,4 @@ body {
   max-height: 50px !important;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=indec.css.map */
