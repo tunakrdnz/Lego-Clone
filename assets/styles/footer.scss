@@ -1,6 +1,6 @@
 .footerContainer {
   display: flex;
-  width: 100%;
+  width: auto;
   background: rgb(32, 29, 72);
   padding-left: 100px;
   padding-top: 50px;
@@ -132,8 +132,8 @@
 
 .footerSocialMedia {
   padding-top: 60px;
-  width: 100vw;
- 
+  width: auto;
+  padding-right: 300px;
   background: rgb(32, 29, 72);
   text-align: right;
   display: block;
@@ -141,7 +141,10 @@
 }
 
 .footer_followUs{
+  font-size: 20px;
   color: white;
+  padding-right:170px;
+  padding-bottom: 20px;
 }
 
 .social-facebook {
@@ -159,7 +162,7 @@
 }
 #social-twitter{
   height: 50px;
-  width: 50px;
+  width: 60px;
 
 }
 
@@ -178,7 +181,8 @@
 }
 #social-youtube{
   height: 50px;
-  width: 50px;
+  width: 90px;
+  padding-left: -20px;
 }
 
 
@@ -203,6 +207,7 @@
 
 .footerWrapper_generalInfo_item{
   padding-right: 40px;
+  font-size: small;
 }
 
 .footerWrapper_generalInfo_item:hover{
@@ -213,4 +218,5 @@
   padding-left: 120px;
   padding-top: 40px;
   padding-bottom: 80px;
+  font-size: small;
 }
