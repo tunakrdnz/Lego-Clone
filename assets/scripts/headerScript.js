@@ -1,9 +1,9 @@
 var button = document.getElementById("headerSliderText");
-var sliderArray = ["New Textttt", "second text", "third text"];
+var sliderArray = ["Black Friday Sale – Save on selected sets through 11/28*"];
 function buttonSlider() {
   for (let i = 0; i < sliderArray.length; i++) {
     button.innerHTML = sliderArray[i];
-    console.log(i);
+    // console.log(i);
   }
 }
 
