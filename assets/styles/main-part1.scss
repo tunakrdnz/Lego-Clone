@@ -112,12 +112,20 @@
   justify-content: center;
 
 }
+.shopnow-button  {
+  border-bottom: 1px solid black;
+}
+
 .shopnow {
   font-size: 1rem;
   line-height: 1.5625rem;
   color: rgb(0, 0, 0);
   font-weight: 500;
 }
+.shopnow:hover {
+  text-decoration: underline;
+}
+
 .shopnow-svg {
   color: rgb(0, 0, 0);
   margin-left: 0.625rem;

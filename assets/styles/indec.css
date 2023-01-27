@@ -640,7 +640,9 @@ body {
   justify-content: center;
 }
 
-
+.shopnow-button {
+  border-bottom: 1px solid black;
+}
 
 .shopnow {
   font-size: 1rem;
@@ -1295,4 +1297,4 @@ body {
   max-height: 50px !important;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=indec.css.map */
