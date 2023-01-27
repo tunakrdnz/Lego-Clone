@@ -245,9 +245,7 @@ body {
   margin-inline-end: 1em;
   padding-inline-start: 40px;
 }
-.main-bar-menu-li1,
-.main-bar-menu-li2,
-.main-bar-menu-li3 {
+.main-bar-menu-li1, .main-bar-menu-li2, .main-bar-menu-li3 {
   display: flex;
   align-items: center;
   white-space: nowrap;
@@ -534,6 +532,7 @@ body {
 
 .trending-now-section {
   padding: 4em;
+  line-height: 1.5;
 }
 
 .trending-now-container {
@@ -545,6 +544,11 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
+  line-height: 2.3125rem;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #2c2c2c;
 }
 
 .trending-now-cards-wrapper {
@@ -552,8 +556,17 @@ body {
   flex-direction: row;
 }
 
+.trending-now-product {
+  padding-left: 1.25rem;
+  width: 40%;
+  display: block;
+  box-sizing: content-box;
+  line-height: 1.5;
+}
+
 .product-img {
   position: relative;
+  cursor: pointer;
 }
 
 .jazz-img1 {
@@ -591,13 +604,42 @@ body {
 .product-info {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  line-height: 1.5 rem;
 }
 
 .product-info h3 {
   text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.9375rem;
 }
 
 .product-info p {
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.shopnow-button {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.shopnow {
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.shopnow-svg {
+  color: rgb(0, 0, 0);
+  margin-left: 0.625rem;
+  line-height: 0;
+  height: 12px;
+  width: 8px;
   text-align: center;
 }
 
@@ -607,14 +649,25 @@ body {
 
 .allpage-tower-img1 {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  inset: 0px;
 }
 
 .allpage-tower-img2 {
   position: absolute;
-  width: 350;
-  height: 120;
   bottom: 200px;
   right: 265px;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  object-fit: cover;
+  width: auto;
+  height: auto;
 }
 
 .eiffel-tower-image h2 {
@@ -631,9 +684,7 @@ body {
 
 @font-face {
   font-family: "CeraPro";
-  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"),
-    url("../fonts/CeraPro-Bold.woff2") format("woff2"),
-    url("../fonts/CeraPro-Medium.woff2") format("woff2");
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Bold.woff2") format("woff2"), url("../fonts/CeraPro-Medium.woff2") format("woff2");
   font-size: 40px;
 }
 :root {

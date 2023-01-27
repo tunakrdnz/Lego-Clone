@@ -7,6 +7,7 @@
 }
 .trending-now-section {
   padding: 4em;
+  line-height: 1.5;
 }
 .trending-now-container {
   display: flex;
@@ -16,13 +17,32 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  line-height: 2.3125rem;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #2c2c2c;
+  
+
+
 }
+
 .trending-now-cards-wrapper {
   display: flex;
   flex-direction: row;
 }
-.product-img {
+.trending-now-product {
+  padding-left: 1.25rem;
+  width: 40%;
+  display: block;
+  box-sizing: content-box;
+  line-height: 1.5;
+  
+
+}
+.product-img  {
   position: relative;
+  cursor: pointer;
 }
 .jazz-img1 {
   position: relative;
@@ -44,6 +64,7 @@
   right: 0;
   width: 348px;
   height: 236px;
+
 }
 .tower-img2 {
   position: absolute;
@@ -55,25 +76,67 @@
 .product-info {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  line-height: 1.5 rem;
+  
 }
 .product-info h3 {
   text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.9375rem;
+  
 }
 .product-info p {
   text-align: center;
+  font-size: 0.875rem;
+
+}
+.shopnow-button {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+
+}
+.shopnow {
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+.shopnow-svg {
+  color: rgb(0, 0, 0);
+  margin-left: 0.625rem;
+  line-height: 0;
+  height: 12px;
+  width: 8px;
+  text-align: center;
+
 }
 .eiffel-tower-image {
   position: relative;
 }
 .allpage-tower-img1 {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  inset: 0px;
 }
 .allpage-tower-img2 {
   position: absolute;
-  width: 350;
-  height: 120;
   bottom: 200px;
   right: 265px;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  object-fit: cover;
+  width: auto;
+  height: auto;
 }
 .eiffel-tower-image h2 {
   position: absolute;
